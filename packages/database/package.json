@@ -1,0 +1,43 @@
+{
+  "name": "@my-project/database",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./helpers": "./src/helpers/index.ts",
+    "./schema/*": "./src/schema/*.ts"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.lib.json",
+    "db:check": "drizzle-kit check",
+    "db:drop": "drizzle-kit drop",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:pull": "drizzle-kit introspect",
+    "db:reset": "tsx scripts/reset.ts",
+    "db:seed": "tsx scripts/seed.ts",
+    "db:studio": "drizzle-kit studio",
+    "db:up": "drizzle-kit up",
+    "dev": "rm -rf dist && tsc -p tsconfig.lib.json --watch",
+    "format": "prettier --write",
+    "lint": "eslint --fix",
+    "test": "vitest run",
+    "test:ci": "CI=1 vitest run --coverage",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "0.10.4",
+    "drizzle-orm": "0.39.3",
+    "drizzle-zod": "0.7.0",
+    "nanoid": "5.1.0",
+    "pg-error-enum": "0.7.3",
+    "zod": "3.24.2"
+  },
+  "devDependencies": {
+    "@my-project/configs": "workspace:*",
+    "drizzle-kit": "0.30.4",
+    "drizzle-seed": "0.3.1"
+  }
+}

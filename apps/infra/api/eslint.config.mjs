@@ -1,0 +1,7 @@
+import cdk from '@my-project/configs/eslint/cdk.mjs';
+import node from '@my-project/configs/eslint/node.mjs';
+import typescript from '@my-project/configs/eslint/typescript.mjs';
+import vitest from '@my-project/configs/eslint/vitest.mjs';
+
+/** @type {import("eslint").Linter.Config[]} */
+export default [...node, ...typescript, ...vitest, ...cdk];
