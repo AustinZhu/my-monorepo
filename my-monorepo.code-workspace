@@ -25,6 +25,10 @@
       "path": "apps/frontends/desktop"
     },
     {
+      "name": "frontends/cli",
+      "path": "apps/frontends/cli"
+    },
+    {
       "name": "backends/user",
       "path": "apps/backends/user"
     },
