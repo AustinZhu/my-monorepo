@@ -28,4 +28,5 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     typedRoutes: true,
     tsconfigPaths: true,
   },
+  platforms: ['ios', 'android'],
 });

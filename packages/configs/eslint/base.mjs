@@ -5,7 +5,7 @@ import importPlugin from 'eslint-plugin-import';
 import prettierConfig from 'eslint-config-prettier';
 import globals from 'globals';
 import babelParser from '@babel/eslint-parser';
-import turboConfig from 'eslint-config-turbo';
+import turboConfig from 'eslint-config-turbo/flat';
 import { FlatCompat } from '@eslint/eslintrc';
 import { fixupConfigRules, includeIgnoreFile } from '@eslint/compat';
 import sonarjsPlugin from 'eslint-plugin-sonarjs';
@@ -40,8 +40,8 @@ export default [
   },
   includeIgnoreFile(gitignorePath),
   js.configs.recommended,
-  ...fixupConfigRules(compat.config(importPlugin.configs.recommended)),
-  ...fixupConfigRules(compat.config(turboConfig)),
+  importPlugin.flatConfigs.recommended,
+  ...turboConfig,
   sonarjsPlugin.configs.recommended,
   prettierConfig,
   bestPracticeRules,

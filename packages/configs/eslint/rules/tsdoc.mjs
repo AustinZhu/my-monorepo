@@ -1,9 +1,12 @@
 import tsdoc from 'eslint-plugin-tsdoc';
 
+/** @type {import("eslint").Linter.Plugin} */
+const tsdocPlugin = tsdoc;
+
 /** @type {import("eslint").Linter.Config} */
 export default {
   plugins: {
-    tsdoc,
+    tsdoc: tsdocPlugin,
   },
   rules: {
     /**

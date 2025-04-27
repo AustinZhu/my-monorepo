@@ -17,16 +17,16 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "ink": "5.1.0",
+    "ink": "5.2.0",
     "meow": "13.2.0",
-    "react": "18.3.1"
+    "react": "19.1.0"
   },
   "devDependencies": {
     "@my-project/configs": "workspace:*",
-    "@types/react": "18.3.1",
-    "chalk": "5.2.0",
-    "ink-testing-library": "4.0.0",
-    "@vitejs/plugin-react": "4.3.2"
+    "@types/react": "19.1.2",
+    "@vitejs/plugin-react": "4.4.1",
+    "chalk": "5.4.1",
+    "ink-testing-library": "4.0.0"
   },
   "engines": {
     "node": ">=16"

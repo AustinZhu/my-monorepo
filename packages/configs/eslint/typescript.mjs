@@ -27,7 +27,7 @@ export default ts.config({
     ...tsConfigs.recommendedTypeChecked,
     ...tsConfigs.strictTypeChecked,
     ...tsConfigs.stylisticTypeChecked,
-    ...fixupConfigRules(compat.config(importPlugin.configs.typescript)),
+    importPlugin.flatConfigs.typescript,
     prettierConfig,
     typescriptRules,
     typescriptExtensionRules,

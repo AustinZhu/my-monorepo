@@ -54,7 +54,7 @@ export type jose_JSONWebKey = unknown;
 
 export type model_Model = unknown;
 
-export type unknown = unknown;
+export type UnknownType = unknown;
 
 export interface object_AccountItem {
     modifyRule?: string;
