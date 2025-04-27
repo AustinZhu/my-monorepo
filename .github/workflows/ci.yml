@@ -34,10 +34,10 @@ jobs:
               - 'apps/frontends/web/**'
             website:
               - 'apps/frontends/website/**'
-            workflow:
-              - 'apps/backends/workflow/**'
-            waitlist:
-              - 'apps/backends/waitlist/**'
+            cli:
+              - 'apps/frontends/cli/**'
+            user:
+              - 'apps/backends/user/**'
             api:
               - 'apps/infra/api/**'
             ui:
